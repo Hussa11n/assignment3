@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University of Bahrain Students Data</title>
-    <!-- Linking Pico CSS for simple styling -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css"
-    />
-    <!-- Linking our custom styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="container">
-      <!-- Main title of the page -->
-      <h1>University of Bahrain Students Data</h1>
-      <!-- Table to display the data -->
-      <table>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University of Bahrain Students Data</title>
+  <!-- Pico CSS for basic styling -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css"
+  />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Page Title -->
+    <header>
+      <h1 class="title">University of Bahrain Students Data</h1>
+    </header>
+
+    <!-- Table Section -->
+    <section>
+      <table role="grid">
         <thead>
           <tr>
-            <th>Year</th>
-            <th>Semester</th>
-            <th>The Programs</th>
-            <th>Nationality</th>
-            <th>Colleges</th>
-            <th>Number of Students</th>
+            <th scope="col">Year</th>
+            <th scope="col">Semester</th>
+            <th scope="col">Programs</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Colleges</th>
+            <th scope="col">Number of Students</th>
           </tr>
         </thead>
         <tbody id="data-table">
-          <!-- Rows will be added here using JavaScript -->
+          <!-- Dynamic rows will be added here using JavaScript -->
         </tbody>
       </table>
-    </main>
-    <!-- Linking the script file for fetching and displaying data -->
-    <script src="api.js"></script>
-  </body>
+    </section>
+  </main>
+
+  <!-- Script for data fetching -->
+  <script src="api.js"></script>
+</body>
 </html>

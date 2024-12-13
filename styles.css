@@ -1,73 +1,64 @@
-/* Styling for the body */
+/* General styling for the page */
+
+/* Simple heading with a subtle border */
+h1 {
+  color: #333; /* Dark grey for the text */
+  text-align: center; /* Center the heading */
+  font-weight: bold; /* Make it bold */
+  margin: 20px auto; /* Add spacing above and below */
+  padding: 15px; /* Add some padding inside the border */
+  border: 2px solid #ddd; /* Subtle, light grey border */
+  border-radius: 8px; /* Slightly rounded corners for elegance */
+  background-color: #f7f7f7; /* Very light grey background */
+  width: 80%; /* Constrain the width of the heading */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-  }
-  
-  /* Main container styling */
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Page Title */
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #0056b3;
-  }
-  
-  /* Table styling */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  thead th {
-    background-color: #0056b3; /* University theme color */
-    color: #fff;
-    text-align: left;
-    padding: 12px;
-    font-size: 1rem;
-  }
-  
-  tbody td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 0.9rem;
-  }
-  
-  /* Zebra stripes for table rows */
-  tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-  }
-  
-  /* Highlight row on hover */
-  tbody tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  /* Small screen adjustments */
-  @media (max-width: 768px) {
-    table {
-      font-size: 0.85rem;
-    }
-  
-    thead th {
-      font-size: 0.9rem;
-    }
-  
-    tbody td {
-      padding: 8px;
-    }
-  }
+  font-family: Arial, sans-serif; /* Make the text easy to read */
+  background-color: #f8f9fa; /* Light grey background */
+  margin: 20px;
+}
+
+/* Styling the table */
+table {
+  width: 100%; /* Take full width of the container */
+  border-collapse: collapse; /* Remove gaps between cells */
+  margin-top: 20px;
+  background-color: #ffffff; /* White background for the table */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for a nice look */
+}
+
+/* Header row styles */
+thead th {
+  background-color: #f4f4f4; /* Light grey for header */
+  color: #333; /* Dark text */
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+  padding: 10px;
+  border-bottom: 2px solid #e5e5e5; /* Add a bottom border */
+}
+
+/* Table row styles */
+tbody td {
+  padding: 10px; /* Add space inside cells */
+  border-bottom: 1px solid #e5e5e5; /* Light grey border for each row */
+  text-align: left; /* Align text to the left */
+  color: #555; /* Softer text color */
+}
+
+/* Alternate row colors for easier reading */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Highlight row when the mouse hovers over it */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Prevent wrapping in the year column */
+td:first-child,
+th:first-child {
+  white-space: nowrap;
+}

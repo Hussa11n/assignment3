@@ -1,0 +1,49 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif; /* Make the text easy to read */
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 20px;
+  }
+  
+  /* Styling the table */
+  table {
+    width: 100%; /* Take full width of the container */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for a nice look */
+  }
+  
+  /* Header row styles */
+  thead th {
+    background-color: #f4f4f4; /* Light grey for header */
+    color: #333; /* Dark text */
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    padding: 10px;
+    border-bottom: 2px solid #e5e5e5; /* Add a bottom border */
+  }
+  
+  /* Table row styles */
+  tbody td {
+    padding: 10px; /* Add space inside cells */
+    border-bottom: 1px solid #e5e5e5; /* Light grey border for each row */
+    text-align: left; /* Align text to the left */
+    color: #555; /* Softer text color */
+  }
+  
+  /* Alternate row colors for easier reading */
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Highlight row when the mouse hovers over it */
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Prevent wrapping in the year column */
+  td:first-child,
+  th:first-child {
+    white-space: nowrap;
+  }

@@ -1,4 +1,4 @@
-# Assignment3
+# Assignment 3
 # 🎓 University of Bahrain Students Data
 
 ### 👥 Team Members

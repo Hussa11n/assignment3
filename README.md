@@ -1,9 +1,9 @@
 # 🎓 Assignment 3 - University of Bahrain Students Data
 
 ## 📖 Overview
-The **University of Bahrain Students Data Web Application** is a simple project designed to fetch and display student data by year, semester, and nationality. The data is presented in a **responsive, clean, and easy-to-read table**, ensuring clarity and accessibility.
-
+- The **University of Bahrain Students Data Web Application** is a simple project designed to fetch and display student data by year, semester, and nationality. The data is presented in a **responsive, clean, and easy-to-read table**, ensuring clarity and accessibility.
 ---
+<img width="1169" alt="Screenshot 2024-12-13 at 9 58 13 PM" src="https://github.com/user-attachments/assets/65db56ca-16a1-4698-b57b-3f61cb07094f" />
 
 ## 👥 Team Members
 

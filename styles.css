@@ -1,40 +1,73 @@
-/* Styling for the table headers */
-thead th {
-  background-color: #007bff; /* University theme color */
-  color: #fff;
-  text-align: center;
-  padding: 12px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Styling for table rows */
-tbody td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-
-/* Adding color coding to specific columns */
-tbody td:nth-child(4) {
-  font-weight: bold;
-  color: #007bff; /* Highlight Nationality */
-}
-
-tbody td:nth-child(6) {
-  font-weight: bold;
-  color: #28a745; /* Highlight Number of Students */
-}
-
-/* Zebra stripes for table rows */
-tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-/* Highlight row on hover */
-tbody tr:hover {
-  background-color: #e9ecef;
-  cursor: pointer;
-}
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Main container styling */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Page Title */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0056b3;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #0056b3; /* University theme color */
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  /* Zebra stripes for table rows */
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Highlight row on hover */
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+    }
+  
+    thead th {
+      font-size: 0.9rem;
+    }
+  
+    tbody td {
+      padding: 8px;
+    }
+  }
